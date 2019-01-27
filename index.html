@@ -1,0 +1,625 @@
+ <!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zoe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./static/css/reset.css">
+    <link rel="stylesheet" href="./static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    
+
+    <script src="./static/js/jquery-1.11.3.min.js"></script>
+    <script src="./static/js/bootstrap.min.js"></script>
+    <script src="./static/js/index.js"></script>
+    <script type="text/javascript" src="./static/js/jquery.js"></script>
+    <script type="text/javascript" src="./static/js/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="./static/js/jquery.easing.js"></script>
+    
+</head>
+<body>
+    <!-- 导航条  style="background:url(./static/imgs/01.jpg);" -->
+    <nav class="navbar navbar-default navbar-inverse" ">
+        <div class="container-fluid">
+            <!--导航条头-->
+
+            <ul class="nav navbar-nav">
+                <li><a href="./index.html">Zoe小天地</a></li>
+                <li>
+                    <a href="" data-toggle="dropdown">想去的地方
+                        <span class="caret"></span>
+                    </a>
+                     <ul class="dropdown-menu">
+                        <li><a href="">普罗旺斯</a></li>
+                        <li><a href="">埃菲尔铁塔</a></li>
+                        <li><a href="">云南</a></li>
+                        <li><a href="">三亚</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="" data-toggle="dropdown">
+                       志同道合
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="">读书</a></li>
+                        <li><a href="">看报</a></li>
+                        <li><a href="">画画</a></li>
+                        <li><a href="">唱歌</a></li>
+                    </ul>
+                </li>
+                 <li><a href="./pro.html">我的项目</a></li>
+
+                 <li><a href="./resume.html">我的简历</a></li>
+                
+                 <div style="float:right;overflow: hidden;background:#bcf">
+                    <audio src="fcml.mp3" style="width:300px;height: 40px;" controls="" autoplay="">您的浏览器不支持该控件</audio>
+                </div>
+                
+               
+            </ul>
+        
+          
+            <ul class="nav navbar-nav navbar-right">
+                
+                <!-- Button trigger modal -->
+                
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">
+                 About me
+                </button>
+                <audio src="./"></audio>
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                      </div>
+                      <div class="modal-body">
+                            名字：<input type="text" name="zoe" value="Zoe" >
+                            兴趣：<input type="text" name="zoe" value="看书,唱歌" >
+                            爱的人：<input type="text" name="zoe" value="家人,朋友" >
+                    
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </ul>
+        </div>
+    </nav>
+    <!-- 中间的东西  style="background:url(./static/imgs/5.jpg);overflow:hidden;"-->
+    <div class="container" style=" ">
+        <div>
+            <!-- 轮播图 -->
+            <div id="lun" class="carousel slide" style="height:500px;width:700px;float:left;" >
+                <!-- 关于轮播的图片 -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img style="margin:0 auto;" src="./static/imgs/banner-b-670x360.jpg" alt="" />
+                        <h2 style="text-align:center;color:white;">Something attempted, something done. 
+                        有所尝试，就等于有所作为。</h2>
+                    </div>
+                    <div class="item">
+                        <img style="margin:0 auto;" src="./static/imgs/banner-a-670x360.jpg" alt="" />
+                        <h3 style="text-align:center;valign:center;">To strive, to seek, to find, and not to yield. 
+
+                               <h2> 去奋斗，去追求，去发现，但不要放弃。</h2>
+                    </div>
+                    <div class="item">
+                        <img style="margin:0 auto;" src="./static/imgs/banner-b-670x360.jpg" alt="" />
+                        <h3 style="text-align:center;color:white;">It's not who you are underneath, it's what you do that defines you. 
+                        你真正是谁并不重要，重要的是你的所做所为。</h3>
+                    </div>
+                    <div class="item">
+                        <img style="margin:0 auto;" src="./static/imgs/banner-c-670x360.jpg" alt="" />
+                        <h3 style="text-align:center;">Remember what should be remembered, and forget what should be forgotten.Alter what is changeable, and accept what is mutable. 
+                        记住该记住的，忘记该忘记的。改变能改变的，接受不能改变的</h3>
+                    </div>
+                    <div class="item">
+                        <img style="margin:0 auto;" src="./static/imgs/b5.jpg" alt="" />
+                        <h3 style="text-align:center;">I look good, the world looks good!
+                            我好看，世界才好看！ 
+                        </h3>   
+                    </div>
+                </div>
+                
+                <!-- 底部的数字 -->
+                <ol class="carousel-indicators">
+                    <li data-target="#lun" data-slide-to="0" class="active"></li>
+                    <li data-target="#lun" data-slide-to="1"></li>
+                    <li data-target="#lun" data-slide-to="2"></li>
+                    <li data-target="#lun" data-slide-to="3"></li>
+                </ol>
+                
+                <!-- 左右箭头 -->
+                <a class="left carousel-control" href="#lun" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#lun" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+        
+            <!-- 自动打字 -->
+            <div class="contt_left" style="height:500px;width:420px;float:right;">
+                <p style="font-size:35px;font-family:楷体; text-indent:2em;padding-top:25px;color:white;"></p>
+            </div>
+        
+        </div>
+    </div> 
+
+    <!-- 文章推荐 -->
+    <h2 style="text-align:center;">我的心情</h2>
+    <div id="recommend">
+        <ul class="entry">
+            <li>
+                <img src="./static/imgs/tj2.jpg" alt="">
+
+            </li>   
+            <div class="zi">    
+                <h3><a href="#">珍贵的角落</a></h3>     
+                <p>最幸福的事，
+                莫过于身边有一群
+                你爱的并且爱你的人，
+                风雨患难中一起走;幸福其实很简单，
+                只要心灵有所满足、有所慰藉就是幸福。健康的活着就是一种莫大的幸福</p>
+            </div>
+            <li>
+                <img src="./static/imgs/tj4.jpg" alt="">
+
+            </li>   
+            <div class="zi">    
+                <h3><a href="#">最幸福的事</a></h3>     
+                <p>
+                不必看别人如何、他人怎样。
+                这个世界，因你而与众不同。
+                世界因你而精彩。
+                你来到这个世界上，不必去复制别人的精彩，也不必去山寨别人的内容。
+                因为上帝的手创造每个人，
+                每个人都有自己存在的价值，
+                每个人都有活着的意义。</p>
+            </div>
+
+            <li>
+                <img src="./static/imgs/tj3.jpg" alt="">
+
+            </li>   
+            <div class="zi">    
+                <h3><a href="#">珍惜拥有的一切</a></h3>     
+                <p>一天很短，
+                短得来不及拥抱清晨，
+                就已经手握黄昏。
+                一年很短，
+                短得来不及细品初春殷红窦绿，
+                就要打点素裹秋霜。
+                一生很短，
+                短的来不及享用美好年华，
+                就已经身处迟暮。
+                总是经过的太快，
+                领悟的太晚，
+                我们要学会珍惜。</p>
+            </div>
+            <li>
+                <img src="./static/imgs/tj5.jpg" alt="">
+
+            </li>   
+            <div class="zi">    
+                <h3><a href="#">珍惜在一起的时间</a></h3>     
+                <p>
+                多少时候，我们总是忽略自己的父母，
+                在一起时，一人拿着一个手机，
+                虽然离得那么近，而心，却觉得那么远。
+                工作了,不在父母身边，不管他们饿了,
+                累了，我们不知道，怕分心耽误工作,
+                所以他们什么也不说;
+                总觉得他们唠叨,
+                觉得他们已经out了,
+                但是却忽略了渐渐出来的白发，
+                就在我们嫌父母唠叨时，他们已经不再年轻啦，
+                珍惜和父母在一起的时间吧，
+                没事了,常打电话,让他们知道你也在想他！    
+                </p>
+            </div>
+            <li>
+                <img src="./static/imgs/tj8.jpg" alt="">
+
+            </li>   
+            <div class="zi">    
+                <h3><a href="#">请铭记于心</a></h3>     
+                <p>
+                Write it on your heart that 
+                everyday is the best day 
+                in the year.
+                请铭记于心，每一天都是
+                一年中最好的一天
+                </p>
+            </div>
+            <li>
+                <img src="./static/imgs/tj9.jpg" alt="">
+
+            </li>   
+            <div class="zi">    
+                <h3><a href="#">不要失望！</a></h3>     
+                <p>我们可以对爱情失望，
+                但是不可以因为失望就不再去爱。
+                人要相信世界上美好的事物永远存在，
+                真挚的爱情永不磨灭。
+                给自己勇气，
+                给自己的生活增添色彩！</p>
+            </div>
+        </ul>
+    </div>
+
+     <!-- 时间轴background:url(./static/imgs/7.jpg)no repeat;-->
+   <div id="timeZhow" style="overflow:hidden;"> 
+        <!-- 空的div -->
+        <div id="arrow">
+            <ul>
+                <li class="arrowup"></li>
+                <li class="arrowdown"></li>
+            </ul>
+        </div>
+        <!-- 时间轴开始 -->
+        <div id="history" style="margin-top:40px;">
+
+            <div class="title">
+                <h2>成长历程</h2>
+                <div id="circle">
+                    <div class="cmsk"></div>
+                    <div class="circlecontent">
+                        <div thisyear="2017" class="timeblock">
+                            <span class="numf"></span>
+                            <span class="nums"></span>
+                            <span class="numt"></span>
+                            <span class="numfo"></span>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="timeyear">YEAR</div>
+                    </div>
+                    <a href="#" class="clock"></a>
+                </div>
+            </div>
+            
+            <!-- 时间轴 -->
+            <div id="content">
+                <ul class="list">
+                    <li>
+                        <div class="liwrap">
+                            <div class="lileft">
+                                <div class="date">
+                                    <span class="year">2017</span>
+                                    <span class="md">Everyday</span>
+                                </div>
+                            </div>
+                            
+                            <div class="point"><b></b></div>
+                            
+                            <div class="liright">
+                                <div class="histt"><a href="#">时刻准备着</a></div>
+                                <div class="hisct">每天都是新的，亲们一起加油吧!</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>                    
+                        <div class="liwrap">
+                        
+                            <div class="lileft">
+                                <div class="date">
+                                    <span class="year">2017</span>
+                                    <span class="md">0120</span>
+                                </div>
+                            </div>
+                            
+                            <div class="point"><b></b></div>
+                            
+                            <div class="liright">
+                                <div class="histt"><a href="#">找工作</a></div>
+                                <div class="hisct">生命不息，学习不止，找一个工作继续学习！</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                    
+                        <div class="liwrap">
+                        
+                            <div class="lileft">
+                                <div class="date">
+                                    <span class="year">2017</span>
+                                    <span class="md">0101</span>
+                                </div>
+                            </div>
+                            
+                            <div class="point"><b></b></div>
+                            
+                            <div class="liright">
+                                <div class="histt"><a href="#">我相信</a></div>
+                                <div class="hisct">时光匆匆，坚持最终会迎来意想不到的结局....</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                    
+                        <div class="liwrap">
+                        
+                            <div class="lileft">
+                                <div class="date">
+                                    <span class="year">2016</span>
+                                    <span class="md">1224</span>
+                                </div>
+                            </div>
+                            
+                            <div class="point"><b></b></div>
+                            
+                            <div class="liright">
+                                <div class="histt"><a href="#">node.JS开始啦！</a></div>
+                                <div class="hisct">没日没夜的奋斗，前后台交互中....一起过了圣诞节</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="liwrap">
+                            <div class="lileft">
+                                <div class="date">
+                                    <span class="year">2016</span>
+                                    <span class="md">1101</span>
+                                </div>
+                            </div>
+                            
+                            <div class="point"><b></b></div>
+                            
+                            <div class="liright">
+                                <div class="histt"><a href="#">ajax</a></div>
+                                <div class="hisct">使用ajax做无刷新页面请求数据</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="liwrap">
+                            <div class="lileft">
+                                <div class="date">
+                                    <span class="year">2016</span>
+                                    <span class="md">1008</span>
+                                </div>
+                            </div>
+                            
+                            <div class="point"><b></b></div>
+                            
+                            <div class="liright">
+                                <div class="histt"><a href="#">使用jQuery写特效</a></div>
+                                <div class="hisct">学习jQuery,接触后台</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="liwrap">
+                        
+                            <div class="lileft">
+                                <div class="date">
+                                    <span class="year">2016</span>
+                                    <span class="md">0924</span>
+                                </div>
+                            </div>
+                            
+                            <div class="point"><b></b></div>
+                            
+                            <div class="liright">
+                                <div class="histt"><a href="#">开始JS</a></div>
+                                <div class="hisct">尝试用JS做一些特效</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="liwrap">
+                            <div class="lileft">
+                                <div class="date">
+                                    <span class="year">2016</span>
+                                    <span class="md">0828</span>
+                                </div>
+                            </div>
+                            
+                            <div class="point"><b></b></div>
+                            
+                            <div class="liright">
+                                <div class="histt"><a href="#">学习中</a></div>
+                                <div class="hisct">学习HTML+css页面布局</div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    
+                     <li>
+                        <div class="liwrap">
+                            <div class="lileft">
+                                <div class="date">
+                                    <span class="year">2016</span>
+                                    <span class="md">0505</span>
+                                </div>
+                            </div>
+                            
+                            <div class="point"><b></b></div>
+                            
+                            <div class="liright">
+                                <div class="histt"><a href="#">创业中</a></div>
+                                <div class="hisct">和家人创业中....</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="liwrap">
+                            <div class="lileft">
+                                <div class="date">
+                                    <span class="year">2016</span>
+                                    <span class="md">0605</span>
+                                </div>
+                            </div>
+                            
+                            <div class="point"><b></b></div>
+                            
+                            <div class="liright">
+                                <div class="histt"><a href="#">积累</a></div>
+                                <div class="hisct">工作中积累经验以及处世为人</div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class="liwrap">
+                            <div class="lileft">
+                                <div class="date">
+                                    <span class="year">2008</span>
+                                    <span class="md">0905</span>
+                                </div>
+                            </div>
+                            
+                            <div class="point"><b></b></div>
+                            
+                            <div class="liright">
+                                <div class="histt"><a href="#">工作了</a></div>
+                                <div class="hisct">有了人生第一份工作，认识了一些人</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="liwrap">
+                            <div class="lileft">
+                                <div class="date">
+                                    <span class="year">2015</span>
+                                    <span class="md">0705</span>
+                                </div>
+                            </div>
+                            
+                            <div class="point"><b></b></div>
+                            
+                            <div class="liright">
+                                <div class="histt"><a href="#">我们毕业啦</a></div>
+                                <div class="hisct">三年的生活，结束了...我们毕业啦！</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="liwrap">
+                            <div class="lileft">
+                                <div class="date">
+                                    <span class="year">2008</span>
+                                    <span class="md">0905</span>
+                                </div>
+                            </div>
+                            
+                            <div class="point"><b></b></div>
+                            
+                            <div class="liright">
+                                <div class="histt"><a href="#">改变</a></div>
+                                <div class="hisct">人生的转折点---认识耶稣</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="liwrap">
+                            <div class="lileft">
+                                <div class="date">
+                                    <span class="year">1999</span>
+                                    <span class="md">0901</span>
+                                </div>
+                            </div>
+                            
+                            <div class="point"><b></b></div>
+                            
+                            <div class="liright">
+                                <div class="histt"><a href="#">开启上学模式</a></div>
+                                <div class="hisct">小学的幸福时光</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="liwrap">
+                            <div class="lileft">
+                                <div class="date">
+                                    <span class="year">1993</span>
+                                    <span class="md">0409</span>
+                                </div>
+                            </div>
+                            
+                            <div class="point"><b></b></div>
+                            
+                            <div class="liright">
+                                <div class="histt"><a href="#">我来到了这个世界</a></div>
+                                <div class="hisct">呱呱落地的我来到了充满爱的家！</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+             </div>
+            <div style="text-align:center;clear:both">
+            </div>
+        </div>            
+        
+    </div> 
+      <!-- 下面的图  -->
+      <div>
+           <div class="jumbotron"  style=" background:url(./static/imgs/6.jpg);color:white;height:318px;width:1146px;margin-top:10px;margin:0 auto; ">
+               <h1>Never give up!</h1>
+               <p >"Grant me the sere;color:transparent; nity to accept the things I cannot change, the courage to change the things I can, and the wisdom to know the difference."</p>
+               <p>
+                   请给我平静的心去接受我不能改变的事，给我勇气去改变我能改变的，给我智慧去明白两者的不同。                    
+               </p>
+               <p>
+                 <a class="btn btn-lg btn-info pull-right" href="javaScript:void(0)" role="button">_____ Reinhold Niebuhr </a>
+               </p>
+           </div>
+       </div>
+      
+      <!-- 底部内容 -->
+    <div class="footer" style="width:100%;height:100px;border-top:1px solid #ccc;text-align:center;line-height:100px;margin:0 auto;">
+     <div  style="margin-top:5px;">  
+        <div class="left">
+            <a href="http://mollyandmepecans.com/shipping-returns">Enjoy yourself</a> • <a href="http://mollyandmepecans.com/privacy-policy">EveryDay is a good Day.</a> • <a href="http://mollyandmepecans.com/contact">Zoe</a>
+            <a href="">© 2017 .January.</a>
+            </div>
+            
+        </div> 
+    </div>   
+
+  <!-- 鼠标进入字体改变颜色 -->
+    <script>
+        <!-- 图片移入放大 -->
+        $('.entry img').mouseenter(function(){
+            //alert(111);
+            $(this).css('transform','scale(1.2)');
+        }).mouseleave(function(){
+            $(this).css('transform','scale(1)');
+        })
+        
+        <!-- 字体自动改变颜色 -->
+        $('.zi').mouseenter(function(){
+              $(this).find("a").css('color',changeBg());
+              $(this).find("p").css('color',changeBg());
+
+        }).mouseleave(function(){
+            $(this).find("a").css('color',changeBg());
+            $(this);
+            $(this).find("p").css('color',changeBg());
+
+        })
+        <!-- 随机数函数 -->
+        function rand(m,n){
+            return Math.floor(Math.random()*(n-m+1)) + m;
+        }
+        
+        function changeBg(){
+            // 你想改变谁
+           return 'rgb('+rand(0,255)+','+rand(0,255)+','+rand(0,255)+')';
+        }
+    </script>
+
+
+
+   
+    
+
+</body>
+</html>

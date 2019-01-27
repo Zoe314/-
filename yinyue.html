@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ceshi</title>
+</head>
+<body>
+	<script>
+// 		var tt = 'aa';   
+// function test(){
+//  alert(tt);
+// //        var tt = 'dd';
+// //        alert(tt);    
+
+//        }   
+
+//   test();	
+// var x=2;
+// console.log(x+++x);
+
+var name = "The Window";
+　　var object = {
+　　　　name : "My Object",
+　　　　getNameFunc : function(){
+　　　　　　return function(){
+　　　　　　　　return this.name;
+　　　　　};
+　　　　}
+};
+alert(object.getNameFunc()());	
+	</script>
+</body>
+</html>
